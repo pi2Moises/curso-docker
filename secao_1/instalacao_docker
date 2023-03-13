@@ -1,0 +1,7 @@
+https://docs.docker.com/engine/install/ubuntu/
+
+# 1 - Faça o download do docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+# 2 - Execute o comando para iniciar a instalação
+sh get-docker.sh

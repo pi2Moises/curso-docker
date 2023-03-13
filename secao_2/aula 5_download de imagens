@@ -1,0 +1,23 @@
+# 1 - Faça o download do docker
+#ex 1: docker pull hello-world
+#ex 2: docker pull ubuntu
+docker pull <nome da imagem>
+
+
+# 2 - Listando imagens baixadas
+docker images
+
+
+# 3 - Executando images
+#ex 1: docker run hello-world
+docker run <nome da imagem>
+
+
+# 4 - Lista os conteiner em execução
+#ex 1: docker ps
+docker ps
+
+
+# 5 - Lista os conteiner em execução no momento
+#ex 1: docker ps -a
+docker ps -a

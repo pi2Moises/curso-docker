@@ -1,0 +1,24 @@
+#AJUDA: docker run --help
+
+
+# 1 - Executando images/conteiner
+#ex 1: docker run hello-world
+docker run <nome da imagem>
+
+
+# 2 - Determinando o tempo de execução de um conteiner
+#ex 1: docker run hello-world sleep 10
+#obs: só encerrado apos o tempo determinado
+docker run <nome da imagem> sleep <tempo de execução em segundos>
+
+
+# 3 - Parando a execução de conteiner
+#ex 1: docker stop jooly_wescoff
+#ex 2: docker stop e20afb243df9
+#obs: pode usar o NOME ou ID  do conteiner
+docker stop <nome do conteiner>
+
+
+# 3 - Acessando o terminal do conteiner
+#ex 1: docker run -it ubuntu
+docker run -it <nome do conteiner>

@@ -1,4 +1,4 @@
-# 1 - Faça o download do docker
+# 1 - Download de imagens
 #ex 1: docker pull hello-world
 #ex 2: docker pull ubuntu
 docker pull <nome da imagem>

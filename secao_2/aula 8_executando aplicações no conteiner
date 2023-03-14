@@ -1,0 +1,9 @@
+# 1 - Executando um container em segundo plano - background
+#ex 1: docker run -dti ubuntu
+docker run -dti <nome do conteiner>
+
+
+# 2 - Acessando um conteiner em execução
+#ex 1: docker exec -it ba948ab5269a bash
+#OBS: é possível executar qualquer aplicação no conteiner: Ex: docker exec -it ba948ab5269a cat /etc/*release*
+docker exec -it <NOME ou ID do conteiner> bash

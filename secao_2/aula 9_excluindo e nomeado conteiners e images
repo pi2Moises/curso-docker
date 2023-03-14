@@ -1,0 +1,34 @@
+# 1 - Parando um container em segundo plano - background
+#ex 1: docker stop ba948ab5269a
+docker stop <id do conteiner>
+
+
+# 2 - Parando todos os container em segundo plano - background
+#ex 1: docker stop $(docker ps -aq)
+docker stop $(lista e sai de todos os conteiners)
+
+
+# 3 - Excluindo um conteiner
+#ex 1: docker rm ba948ab5269a
+#OBS: é possível executar qualquer aplicação no conteiner: Ex: docker exec -it ba948ab5269a cat /etc/*release*
+docker rm <NOME ou ID do conteiner>
+
+
+# 4 - Excluindo todos os conteiner
+#ex 1: docker rm $(docker ps -aq)
+docker rm $(lista e sai de todos os conteiners)
+
+
+# 5 - Excluindo uma imagem
+#ex 1: docker rmi d8e7ef3d993a
+docker rmi <id da imagem>
+
+
+# 6 - Excluindo todos as imagens
+#ex 1: docker rmi $(docker images -aq)
+docker rmi $(lista e sai de todas as imagens)
+
+# 6 - Renomeando conteiners
+#ex 1: docker run -dti --name Ubuntu-A ubuntu
+docker run -dti --name <novo nome do container> <nome da imagem>
+

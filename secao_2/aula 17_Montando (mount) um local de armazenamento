@@ -1,7 +1,13 @@
-# 1 - Parando um conteiner
-#ex 1: docker stop mysql
-docker stop <nome da imagem>
+# 1 - Ver o local de armazenamento dentro do conteiner
+#ex 1: docker inspect mysql
+docker inspect <nome da imagem>
+obs: Verificar o caminho dentro de "Mounts" => "Destination"
 
-# 2 - Iniciando um conteiner
-#ex 1: docker start mysql
-docker start <nome da imagem>
+# 2 - Crie o local de armazenamento fora do conteiner
+#ex 2: mkdir /home/moises/storage/mysql
+
+
+# 3 - Local de Armazenamento para o MYSQL
+#ex 3: docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql -d -p 3306:3306 --volume=/var/lib/mysql:/home/moises/storage/mysql mysql
+
+docker run -e <define a variavel de ambiente e informa a senha(obrigatorio)> --name <renomeia o conteiner (opcional)> -d -p <define a porta> --volume=<local de armazenamento dentro do conteiner:local de armazenamento fora do conteiner> <nome da imagem>

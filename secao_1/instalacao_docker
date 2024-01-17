@@ -5,3 +5,9 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 
 # 2 - Execute o comando para iniciar a instalação
 sh get-docker.sh
+
+# 3 - Ver a versão do Docker (se der retorno é porque o docker foi instalado com sucesso)
+docker version
+
+# 4 - Verificar se o serviço está ativo após a instalação
+systemctl status docker

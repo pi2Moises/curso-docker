@@ -1,0 +1,22 @@
+# 1 - Fazendo download de imagens do mysql
+#ex 1: docker pull mysql
+docker pull <nome da imagem>
+
+# 2 - Executando o conteiner MYSQL
+#ex 2: docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql -d -p 3306:3306 mysql
+docker run -e <define a variavel de ambiente e informa a senha(obrigatorio)> --name <renomeia o conteiner (opcional)> -d -p <define a porta> <nome da imagem>
+
+# 3 - Criando um banco de dados no mysql
+# Acesse o conteiner via bash: docker exec -it mysql bash
+# Para criar o banco digite: mysql -u root -p --protocol=tcp (comando a ser executado dentro do conteiner mysql)
+#ex 3: docker pull mysql
+mysql -u <nome do usuario> -p --protocol=<nome do protocolo>
+
+#informe a senha do usuario do banco de dados
+
+
+
+
+# OBS: Caso precise vc pode consultar o IP do conteiner com o seguinte comando: 
+#ex: docker inspect mysql
+docker inspect <id/nome do container>

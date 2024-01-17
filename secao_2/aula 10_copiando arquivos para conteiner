@@ -1,0 +1,9 @@
+# 1 - Criando pastas dentro do container
+#ex 1: docker exec ubuntu mkdir /exemplo
+docker exec <nome da imagem> mkdir <nome da pasta>
+
+
+# 2 - Copiando arquivos para o conteiner
+#ex 2: docker cp MeuArquivo.txt ubuntu:/exemplo
+docker cp <nome do arquivo a ser copiado> <nome da imagem:/nome da pasta de destino>
+

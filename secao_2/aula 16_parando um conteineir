@@ -1,0 +1,7 @@
+# 1 - Parando um conteiner
+#ex 1: docker stop mysql
+docker stop <nome da imagem>
+
+# 2 - Iniciando um conteiner
+#ex 1: docker start mysql
+docker start <nome da imagem>

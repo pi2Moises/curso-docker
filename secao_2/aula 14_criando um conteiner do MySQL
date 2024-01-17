@@ -3,7 +3,7 @@
 docker pull <nome da imagem>
 
 # 2 - Executando o conteiner MYSQL
-#ex 2: docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql -d -p 3306:3306 mysql
+#ex 2: docker run -e MYSQL_ROOT_PASSWORD=senha123 --name mysql -d -p 3306:3306 mysql
 docker run -e <define a variavel de ambiente e informa a senha(obrigatorio)> --name <renomeia o conteiner (opcional)> -d -p <define a porta> <nome da imagem>
 
 # 3 - Criando um banco de dados no mysql

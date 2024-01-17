@@ -1,0 +1,23 @@
+# 1 - BIND
+As montagens Bind são basicamente apenas vincular um determinado diretório ou arquivo do host dentro do conteiner:
+#EX BIND: docker un v- /hostdir:/containerdir mysql 
+
+
+# 2 - NAMED
+Volumes nomeados são volumes que você cria manualmente com o comando:
+# EX NAMED: docker volume create <nome do volume>
+# OBS: Eles são criados em /var/lib/docker/volumes e podem ser referenciados apenas por seu nome
+
+
+# Digamos que você crie um volume chamado "mysql_data", voc~e pode apenas referenciá-lo com o comando:
+docker run -v mysql_data:/containerdir mysql
+
+
+
+
+
+
+# 3 - DOCKERFILE
+
+
+

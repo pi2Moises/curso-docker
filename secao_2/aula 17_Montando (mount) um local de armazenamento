@@ -8,6 +8,6 @@ obs: Verificar o caminho dentro de "Mounts" => "Destination"
 
 
 # 3 - Local de Armazenamento para o MYSQL
-#ex 3: docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql -d -p 3306:3306 --volume=/var/lib/mysql:/home/moises/storage/mysql mysql
+#ex 3: docker run -e MYSQL_ROOT_PASSWORD=senha123 --name mysql -d -p 3306:3306 --volume=/home/moises/storage/mysql:/var/lib/mysql mysql
 
-docker run -e <define a variavel de ambiente e informa a senha(obrigatorio)> --name <renomeia o conteiner (opcional)> -d -p <define a porta> --volume=<local de armazenamento dentro do conteiner:local de armazenamento fora do conteiner> <nome da imagem>
+docker run -e <define a variavel de ambiente e informa a senha(obrigatorio)> --name <renomeia o conteiner (opcional)> -d -p <define a porta> --volume=<local de armazenamento fora do conteiner:local de armazenamento dentro do conteiner> <nome da imagem>

@@ -14,10 +14,21 @@ docker run -v mysql_data:/containerdir mysql
 
 
 
-
-
-
 # 3 - DOCKERFILE
+#Tipo de volume que são criados pela instrução VOLUME. Esses volumes também são criados em /var/lib/docker/volumes,
+mas não tem um determinado nome. O volume é criado ao executar o conateiner e são úteis para salvar dados persistentes.
+O Desenvolvedor pode dizer onde estão os dados importantes e o que deve ser persistido.
+
+
+
+
+# QUAL DEVO UTILIZAR?
+# Depende de você. 
+# Se você quiser manter tudo na "área do docker" (/var/lib/docker), você pode usar volumes.
+# Se você deseja manter sua própria estrutura de diretório, você pode usar BINDs.
+
+# * O Docker recomenda o uso de volumes em vez do uso de binds, pois os volumes são criados e gerenciados pelo docker.
+
 
 
 

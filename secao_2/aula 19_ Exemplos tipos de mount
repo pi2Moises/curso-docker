@@ -1,0 +1,21 @@
+# 1 - Criando um volume do tipo BIND MOUNT
+#ex 1: docker run -dti --mount type=bind,src=/opt/teste,dst=/teste debian
+docker run -dti --mount type=<tipo de volume>,src=<local de armazenamento FORA do conteiner>,dst=<local de armazenamento DENTRO do conteiner> <nome da imagem>
+
+#ex 2: docker run -dti --mount type=bind,src=/opt/teste,dst=/teste,ro debian
+docker run -dti --mount type=<tipo de volume>,src=<local de armazenamento FORA do conteiner>,dst=<local de armazenamento DENTRO do conteiner>,<somente leitura de arquivos> <nome da imagem>
+
+# 2 - Listando volumes já criados
+#ex: docker volume ls
+
+# 3 - Criando VOLUMES com o comando 'create'
+#ex 3: docker volume create data-debian
+#local de armazenamento: var/lib/docker/volumes/teste/_data
+docker volume create <nome do volume>
+
+
+# 4 - Excluindo volumes
+#ex 1: docker volume rm teste
+docker volume rm <nome do volume que deseja excluir>
+OBS: o volume não pode estar sendo utilizado por nenhum conteiner no momento da exclusão
+

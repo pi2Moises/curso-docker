@@ -1,0 +1,10 @@
+# 1 - Forçando a exclusão de um conteiner em execução
+#ex 1: docker rm -f centoa-A
+docker rm <comando para forçar a parada do conteiner> <nome do conteiner>
+
+
+# 2 - Excluindo todos os volumes de uma vez
+#ex 1: docker volume prune
+
+# 3 - Excluindo todos os conteiner de uma vez
+#ex 1: docker container prune

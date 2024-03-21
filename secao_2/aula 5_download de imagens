@@ -18,6 +18,6 @@ docker run <nome da imagem>
 docker ps
 
 
-# 5 - Lista os conteiner em execução no momento
+# 5 - Lista os conteiner que estavam em execução
 #ex 1: docker ps -a
 docker ps -a

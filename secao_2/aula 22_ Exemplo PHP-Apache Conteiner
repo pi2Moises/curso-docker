@@ -1,0 +1,25 @@
+docker run  --name php-A -d -p 8080:80 --volume=/data/php-A:/var/www/html php:7.4-apache
+
+# pega o IP do conteiner para acessar o servidor web
+ip a  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Exemplo Apache</title>
+</head>
+<body>
+<h1> OK !! Apache funcionando!!!!! </h1>
+</body>
+</html>
+
+
+
+
+<?php
+phpinfo();
+?>
+
+
